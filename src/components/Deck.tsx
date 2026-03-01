@@ -15,6 +15,10 @@ import {
   TrendingUp,
   Activity
 } from 'lucide-react';
+// --- TYPES ---
+type Task = { text: string; owner: string; done?: boolean; priority?: boolean };
+type Project = { name: string; phase: string; status: string; deadline?: string; tasks: Task[] };
+
 // --- MOCK DATA STRIPPED FROM MD ---
 const blockers = [
   { id: 1, text: "Anarti copy not finalized (Tracks 2-4 + conference)", owner: "Harry", blocking: "Hazel cannot build sequences; April 3 deadline is 33 days out" },
@@ -22,7 +26,7 @@ const blockers = [
   { id: 3, text: "BWOG reply-to not connected (oAuth needed)", owner: "Tobey + Laura", blocking: "Replies from prospects not landing in Laura's inbox" },
   { id: 4, text: "Internal AI SDR — GHL CRM write-back not built", owner: "Tobey", blocking: "Only remaining item before internal deployment" },
 ];
-const clientProjects = [
+const clientProjects: Project[] = [
   {
     name: "By Way of Grey (BWOG)",
     phase: "Lead Gen — Live & Support",
