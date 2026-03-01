@@ -80,12 +80,12 @@ const deadlines = [
   { date: "Mar 7", client: "Anarti & TEC+", event: "All sequence copy finalized & approved" },
 ];
 // --- COMPONENTS ---
-const Card = ({ children, className = "" }) => (
+const Card = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
   <div className={`bg-zinc-900 border border-zinc-800 rounded-xl p-6 ${className}`}>
     {children}
   </div>
 );
-const Badge = ({ children, type = "default" }) => {
+const Badge = ({ children, type = "default" }: { children: React.ReactNode; type?: "danger" | "success" | "warning" | "default" }) => {
   const styles = {
     danger: "bg-red-500/10 text-red-400 border-red-500/20",
     success: "bg-[#deff9a]/10 text-[#deff9a] border-[#deff9a]/20",
