@@ -1,12 +1,11 @@
 "use client";
 
-import React, { useState } from 'react';
+import React from 'react';
 import {
   AlertTriangle,
   Calendar,
   CheckCircle2,
   Clock,
-  ChevronRight,
   Users,
   Cpu,
   Briefcase,
@@ -100,7 +99,6 @@ const Badge = ({ children, type = "default" }) => {
   );
 };
 export default function App() {
-  const [activeTab, setActiveTab] = useState('overview');
   return (
     <div className="min-h-screen bg-zinc-950 text-zinc-100 font-sans selection:bg-[#deff9a]/30">
 
