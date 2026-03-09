@@ -33,23 +33,23 @@ const PROJECTS = [
   {
     id: "bwog", name: "BWOG", client: "Laura Robichaux", type: "Client",
     status: "Phase 1 Incomplete / Phase 2 Live", health: "YELLOW", deadline: "Performance-based (10 discovery calls)",
-    progress: 55, phase: "Phase 1 Incomplete · Phase 2 Live",
+    progress: 55, phase: "Phase 1 Incomplete \u00b7 Phase 2 Live",
     tasks: [
-      { id: "b1", name: "Reply handling — define path (Instantly reply → triggers → handoff)", owner: "mitch", priority: "HIGH", status: "open", due: "2026-03-10" },
-      { id: "b2", name: "Warm nurture sequence (MQL) — not built, leads sitting with no follow-up", owner: "tobey", priority: "HIGH", status: "open", due: "2026-03-12" },
-      { id: "b3", name: "Hot lead pre-call sequence (SQL) — must route through Google Workspace inbox", owner: "tobey", priority: "HIGH", status: "open", due: "2026-03-12" },
-      { id: "b4", name: "HubSpot lifecycle workflow audit — active vs draft vs missing", owner: "tobey", priority: "HIGH", status: "carry-over", due: "2026-03-09" },
-      { id: "b5", name: "Verify all 5 Stan Store → HubSpot Zaps (all trigger paths)", owner: "tobey", priority: "MEDIUM", status: "carry-over", due: "2026-03-09" },
+      { id: "b1", name: "Reply handling \u2014 define path (Instantly reply \u2192 triggers \u2192 handoff)", owner: "mitch", priority: "HIGH", status: "open", due: "2026-03-10" },
+      { id: "b2", name: "Warm nurture sequence (MQL) \u2014 not built, leads sitting with no follow-up", owner: "tobey", priority: "HIGH", status: "open", due: "2026-03-12" },
+      { id: "b3", name: "Hot lead pre-call sequence (SQL) \u2014 must route through Google Workspace inbox", owner: "tobey", priority: "HIGH", status: "open", due: "2026-03-12" },
+      { id: "b4", name: "HubSpot lifecycle workflow audit \u2014 active vs draft vs missing", owner: "tobey", priority: "HIGH", status: "carry-over", due: "2026-03-09" },
+      { id: "b5", name: "Verify all 5 Stan Store \u2192 HubSpot Zaps (all trigger paths)", owner: "tobey", priority: "MEDIUM", status: "carry-over", due: "2026-03-09" },
       { id: "b6", name: "Laura's 3 outstanding HubSpot questions", owner: "tobey", priority: "MEDIUM", status: "carry-over", due: "2026-03-09" },
-      { id: "b7", name: "Test deal identification — keep or delete", owner: "tobey", priority: "LOW", status: "carry-over", due: "2026-03-09" },
+      { id: "b7", name: "Test deal identification \u2014 keep or delete", owner: "tobey", priority: "LOW", status: "carry-over", due: "2026-03-09" },
       { id: "b8", name: "Google Drive link embedding in contact fields", owner: "tobey", priority: "LOW", status: "carry-over", due: "2026-03-09" },
       { id: "b9", name: "Lead Status verification (Feb changes)", owner: "tobey", priority: "MEDIUM", status: "carry-over", due: "2026-03-09" },
-      { id: "b10", name: "Written audit report → #internal-by-way-of-grey (Mon EOD)", owner: "tobey", priority: "HIGH", status: "open", due: "2026-03-09" },
+      { id: "b10", name: "Written audit report \u2192 #internal-by-way-of-grey (Mon EOD)", owner: "tobey", priority: "HIGH", status: "open", due: "2026-03-09" },
       { id: "b11", name: "Communicate exit KPI to Laura (10 discovery calls)", owner: "mitch", priority: "MEDIUM", status: "open", due: "2026-03-10" },
       { id: "b12", name: "Respond to Hazel's unanswered questions", owner: "mitch", priority: "MEDIUM", status: "open", due: "2026-03-09" },
       { id: "b13", name: "Slack notification routing verification", owner: "tobey", priority: "LOW", status: "in-progress", due: "2026-03-12" },
       { id: "b14", name: "Daily Instantly monitoring + lead uploads", owner: "hazel", priority: "MEDIUM", status: "ongoing", due: null },
-      { id: "b15", name: "Stan Store → HubSpot Zap field mappings confirmed", owner: "tobey", priority: "MEDIUM", status: "complete", due: "2026-03-07" },
+      { id: "b15", name: "Stan Store \u2192 HubSpot Zap field mappings confirmed", owner: "tobey", priority: "MEDIUM", status: "complete", due: "2026-03-07" },
       { id: "b16", name: "ManyChat keyword trigger replacement", owner: "tobey", priority: "HIGH", status: "complete", due: "2026-03-07" },
       { id: "b17", name: "Contact Source property update + Zapier mapping", owner: "tobey", priority: "MEDIUM", status: "complete", due: "2026-03-07" },
     ],
@@ -70,19 +70,19 @@ const PROJECTS = [
     tasks: [
       { id: "a1", name: "Tracks 2-4 full email copy (Emails 2-7 each)", owner: "matt", priority: "CRITICAL", status: "overdue", due: "2026-03-03" },
       { id: "a2", name: "Contact list rerun from John (remove competitor contamination)", owner: "mitch", priority: "HIGH", status: "blocked", due: "2026-03-10" },
-      { id: "a3", name: "Infrastructure sizing — list rerun count determines 3 vs 4-5 domains", owner: "mitch", priority: "HIGH", status: "blocked", due: "2026-03-10" },
-      { id: "a4", name: "KPI definition alignment (booked meeting ≠ closed account)", owner: "matt", priority: "HIGH", status: "open", due: "2026-03-10" },
+      { id: "a3", name: "Infrastructure sizing \u2014 list rerun count determines 3 vs 4-5 domains", owner: "mitch", priority: "HIGH", status: "blocked", due: "2026-03-10" },
+      { id: "a4", name: "KPI definition alignment (booked meeting \u2260 closed account)", owner: "matt", priority: "HIGH", status: "open", due: "2026-03-10" },
       { id: "a5", name: "Pricing discrepancy resolution ($15-25 vs $25-30)", owner: "matt", priority: "MEDIUM", status: "open", due: "2026-03-10" },
-      { id: "a6", name: "Track 1 (Massage Therapists) — template + load into Instantly", owner: "hazel", priority: "HIGH", status: "ready", due: "2026-03-10" },
-      { id: "a7", name: "Conference sequences — pre-build templates from outlines now", owner: "hazel", priority: "MEDIUM", status: "ready", due: "2026-03-14" },
+      { id: "a6", name: "Track 1 (Massage Therapists) \u2014 template + load into Instantly", owner: "hazel", priority: "HIGH", status: "ready", due: "2026-03-10" },
+      { id: "a7", name: "Conference sequences \u2014 pre-build templates from outlines now", owner: "hazel", priority: "MEDIUM", status: "ready", due: "2026-03-14" },
       { id: "a8", name: "Attendee list staging spreadsheet (answer Hazel's Mar 6 question)", owner: "mitch", priority: "MEDIUM", status: "open", due: "2026-03-09" },
       { id: "a9", name: "GTM session presentation (implementation plan, not kickoff)", owner: "mitch", priority: "HIGH", status: "in-progress", due: "2026-03-10" },
-      { id: "a10", name: "Month Zero — all systems ready", owner: "tobey", priority: "HIGH", status: "open", due: "2026-03-14" },
-      { id: "a11", name: "Content extraction — Session 1 (3-4 pieces target)", owner: "hazel", priority: "MEDIUM", status: "open", due: "2026-03-13" },
+      { id: "a10", name: "Month Zero \u2014 all systems ready", owner: "tobey", priority: "HIGH", status: "open", due: "2026-03-14" },
+      { id: "a11", name: "Content extraction \u2014 Session 1 (3-4 pieces target)", owner: "hazel", priority: "MEDIUM", status: "open", due: "2026-03-13" },
       { id: "a12", name: "Content Session 2 scheduling", owner: "mitch", priority: "LOW", status: "open", due: "2026-03-17" },
       { id: "a13", name: "Email signature + template assets", owner: "hazel", priority: "MEDIUM", status: "complete", due: "2026-03-07" },
       { id: "a14", name: "Brand asset extraction from Google Drive", owner: "hazel", priority: "LOW", status: "complete", due: "2026-03-07" },
-      { id: "a15", name: "AI SDR data tables — Anarti (9 personas, 3 domains, 4 tracks)", owner: "mitch", priority: "HIGH", status: "blocked", due: "2026-03-11" },
+      { id: "a15", name: "AI SDR data tables \u2014 Anarti (9 personas, 3 domains, 4 tracks)", owner: "mitch", priority: "HIGH", status: "blocked", due: "2026-03-11" },
     ],
     milestones: [
       { name: "Infrastructure warming started", date: "2026-02-24", done: true },
@@ -100,16 +100,16 @@ const PROJECTS = [
   },
   {
     id: "tec", name: "TEC+ Consulting", client: "Joseph Gaunt", type: "Client",
-    status: "Infrastructure Warming", health: "YELLOW", deadline: "Mid-March launch → 90-day clock",
+    status: "Infrastructure Warming", health: "YELLOW", deadline: "Mid-March launch \u2192 90-day clock",
     progress: 22, phase: "Pre-Launch",
     tasks: [
-      { id: "t1", name: "Gaming sequences (4-touch) — confirm status Monday", owner: "harry", priority: "HIGH", status: "overdue", due: "2026-02-28" },
-      { id: "t2", name: "Mining sequences (4-touch) — confirm status Monday", owner: "harry", priority: "HIGH", status: "overdue", due: "2026-02-28" },
-      { id: "t3", name: "Contact lists — Gaming (MGA/GBGA/AGCC, 200-2K employees)", owner: "hazel", priority: "HIGH", status: "open", due: "2026-03-12" },
-      { id: "t4", name: "Contact lists — Mining (FTSE 250/350, 500+ emp, UK/London HQ)", owner: "hazel", priority: "HIGH", status: "open", due: "2026-03-12" },
+      { id: "t1", name: "Gaming sequences (4-touch) \u2014 confirm status Monday", owner: "harry", priority: "HIGH", status: "overdue", due: "2026-02-28" },
+      { id: "t2", name: "Mining sequences (4-touch) \u2014 confirm status Monday", owner: "harry", priority: "HIGH", status: "overdue", due: "2026-02-28" },
+      { id: "t3", name: "Contact lists \u2014 Gaming (MGA/GBGA/AGCC, 200-2K employees)", owner: "hazel", priority: "HIGH", status: "open", due: "2026-03-12" },
+      { id: "t4", name: "Contact lists \u2014 Mining (FTSE 250/350, 500+ emp, UK/London HQ)", owner: "hazel", priority: "HIGH", status: "open", due: "2026-03-12" },
       { id: "t5", name: "Pending items from Joe (domain, Outlook, booking, footer, sign-off, LIA)", owner: "harry", priority: "HIGH", status: "blocked", due: "2026-03-10" },
       { id: "t6", name: "Slack channel removal follow-up", owner: "mitch", priority: "LOW", status: "open", due: "2026-03-10" },
-      { id: "t7", name: "AI SDR data tables — TEC+ (6 personas, 2 domains, 2 campaigns)", owner: "mitch", priority: "HIGH", status: "blocked", due: "2026-03-11" },
+      { id: "t7", name: "AI SDR data tables \u2014 TEC+ (6 personas, 2 domains, 2 campaigns)", owner: "mitch", priority: "HIGH", status: "blocked", due: "2026-03-11" },
     ],
     milestones: [
       { name: "Contract signed", date: "2026-01-15", done: true },
@@ -124,10 +124,10 @@ const PROJECTS = [
   {
     id: "ryse", name: "RYSE Creative", client: "Ryan & Martina Sebring", type: "Client",
     status: "Discovery", health: "GREEN", deadline: "Aug 2026",
-    progress: 15, phase: "Phase 1 — Discovery",
+    progress: 15, phase: "Phase 1 \u2014 Discovery",
     tasks: [
-      { id: "r1", name: "Session 3 — workflow extraction (Matt leads)", owner: "matt", priority: "MEDIUM", status: "open", due: "2026-03-14" },
-      { id: "r2", name: "Session 4 — final discovery", owner: "matt", priority: "MEDIUM", status: "open", due: "2026-03-21" },
+      { id: "r1", name: "Session 3 \u2014 workflow extraction (Matt leads)", owner: "matt", priority: "MEDIUM", status: "open", due: "2026-03-14" },
+      { id: "r2", name: "Session 4 \u2014 final discovery", owner: "matt", priority: "MEDIUM", status: "open", due: "2026-03-21" },
       { id: "r3", name: "Central Brain build (Pillar 1, Week 5)", owner: "tobey", priority: "HIGH", status: "open", due: "2026-03-28" },
     ],
     milestones: [
@@ -142,16 +142,16 @@ const PROJECTS = [
   {
     id: "aisdr", name: "AI SDR", client: null, type: "Internal",
     status: "Near Complete", health: "YELLOW", deadline: "Blocks TEC+ and 1760 launches",
-    progress: 78, phase: "Testing → Configuration",
+    progress: 78, phase: "Testing \u2192 Configuration",
     tasks: [
-      { id: "s1", name: "Playbook layer: campaign-level confirmed → communicate to Tobey", owner: "mitch", priority: "HIGH", status: "ready", due: "2026-03-09" },
+      { id: "s1", name: "Playbook layer: campaign-level confirmed \u2192 communicate to Tobey", owner: "mitch", priority: "HIGH", status: "ready", due: "2026-03-09" },
       { id: "s2", name: "Interested-prospect behavior: per-project (auto-book URL + human routing toggle)", owner: "tobey", priority: "HIGH", status: "open", due: "2026-03-10" },
-      { id: "s3", name: "Data table template document → Mitch", owner: "tobey", priority: "HIGH", status: "overdue", due: "2026-03-05" },
-      { id: "s4", name: "Populate tables — Anarti (9 personas, 3 domains, 4 tracks)", owner: "mitch", priority: "HIGH", status: "blocked", due: "2026-03-11" },
-      { id: "s5", name: "Populate tables — TEC+ (6 personas, 2 domains, 2 campaigns)", owner: "mitch", priority: "HIGH", status: "blocked", due: "2026-03-11" },
-      { id: "s6", name: "Populate tables — 1760 Internal (15 personas, 5 domains)", owner: "mitch", priority: "MEDIUM", status: "blocked", due: "2026-03-12" },
+      { id: "s3", name: "Data table template document \u2192 Mitch", owner: "tobey", priority: "HIGH", status: "overdue", due: "2026-03-05" },
+      { id: "s4", name: "Populate tables \u2014 Anarti (9 personas, 3 domains, 4 tracks)", owner: "mitch", priority: "HIGH", status: "blocked", due: "2026-03-11" },
+      { id: "s5", name: "Populate tables \u2014 TEC+ (6 personas, 2 domains, 2 campaigns)", owner: "mitch", priority: "HIGH", status: "blocked", due: "2026-03-11" },
+      { id: "s6", name: "Populate tables \u2014 1760 Internal (15 personas, 5 domains)", owner: "mitch", priority: "MEDIUM", status: "blocked", due: "2026-03-12" },
       { id: "s7", name: "Validate config for all 3 campaigns", owner: "tobey", priority: "HIGH", status: "blocked", due: "2026-03-12" },
-      { id: "s8", name: "Walkthrough with Mitch — classification + GHL write-back", owner: "tobey", priority: "MEDIUM", status: "open", due: "2026-03-13" },
+      { id: "s8", name: "Walkthrough with Mitch \u2014 classification + GHL write-back", owner: "tobey", priority: "MEDIUM", status: "open", due: "2026-03-13" },
       { id: "s9", name: "Per-sender identity routing", owner: "tobey", priority: "HIGH", status: "complete", due: "2026-03-07" },
       { id: "s10", name: "Classification branch testing (all 6 branches)", owner: "tobey", priority: "HIGH", status: "complete", due: "2026-03-07" },
     ],
@@ -170,11 +170,11 @@ const PROJECTS = [
     progress: 65, phase: "Build",
     tasks: [
       { id: "g1", name: "Coaching CRM Starter snapshot testing", owner: "hazel", priority: "MEDIUM", status: "in-progress", due: "2026-03-12" },
-      { id: "g2", name: "Harry lead import — Google Sheet location (Tobey asked, unanswered)", owner: "mitch", priority: "MEDIUM", status: "open", due: "2026-03-09" },
+      { id: "g2", name: "Harry lead import \u2014 Google Sheet location (Tobey asked, unanswered)", owner: "mitch", priority: "MEDIUM", status: "open", due: "2026-03-09" },
       { id: "g3", name: "Booking flow + automations", owner: "hazel", priority: "HIGH", status: "complete", due: "2026-03-07" },
       { id: "g4", name: "Email templates (6)", owner: "hazel", priority: "MEDIUM", status: "complete", due: "2026-03-07" },
       { id: "g5", name: "Slack notification automations (7 Zapier webhooks)", owner: "hazel", priority: "MEDIUM", status: "complete", due: "2026-03-07" },
-      { id: "g6", name: "New lead → Harry owner assignment", owner: "hazel", priority: "HIGH", status: "complete", due: "2026-03-07" },
+      { id: "g6", name: "New lead \u2192 Harry owner assignment", owner: "hazel", priority: "HIGH", status: "complete", due: "2026-03-07" },
     ],
     milestones: [
       { name: "Booking flow live", date: "2026-03-07", done: true },
@@ -189,8 +189,8 @@ const PROJECTS = [
     tasks: [
       { id: "l1", name: "ICP criteria posted to #internal-lead-gen", owner: "matt", priority: "HIGH", status: "blocked", due: "2026-03-09" },
       { id: "l2", name: "Display name changes on 10 inboxes (warming preserved)", owner: "hazel", priority: "MEDIUM", status: "in-progress", due: "2026-03-10" },
-      { id: "l3", name: "5 new persona inboxes — fresh warming required", owner: "hazel", priority: "MEDIUM", status: "in-progress", due: "2026-03-24" },
-      { id: "l4", name: "AI SDR data tables — 1760 (15 personas, 5 domains)", owner: "mitch", priority: "MEDIUM", status: "blocked", due: "2026-03-12" },
+      { id: "l3", name: "5 new persona inboxes \u2014 fresh warming required", owner: "hazel", priority: "MEDIUM", status: "in-progress", due: "2026-03-24" },
+      { id: "l4", name: "AI SDR data tables \u2014 1760 (15 personas, 5 domains)", owner: "mitch", priority: "MEDIUM", status: "blocked", due: "2026-03-12" },
     ],
     milestones: [
       { name: "ICP finalized", date: "2026-03-06", done: true },
@@ -235,14 +235,14 @@ const HEALTH_CONFIG: Record<string, { color: string; bg: string }> = {
   YELLOW: { color: COLORS.yellow, bg: COLORS.yellowBg },
   RED: { color: COLORS.red, bg: COLORS.redBg },
 };
-const TODAY = new Date("2026-03-07");
+const TODAY = new Date("2026-03-08");
 const GANTT_START = new Date("2026-02-23");
 const GANTT_END = new Date("2026-04-12");
 const GANTT_DAYS = Math.ceil((GANTT_END.getTime() - GANTT_START.getTime()) / 86400000);
 function daysBetween(a: Date, b: Date) { return Math.ceil((b.getTime() - a.getTime()) / 86400000); }
-function formatDate(d: string | null) {
+function formatDate(d: string | Date | null) {
   if (!d) return "\u2014";
-  const dt = new Date(d);
+  const dt = new Date(d as string);
   return dt.toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
 function daysUntil(d: string | null) {
@@ -263,9 +263,9 @@ function ProgressBar({ value, color = COLORS.accent, height = 6, bg = COLORS.bor
     </div>
   );
 }
-function Card({ children, style, onClick }: { children: React.ReactNode; style?: React.CSSProperties; onClick?: () => void }) {
+function Card({ children, style, onClick, className }: { children: React.ReactNode; style?: React.CSSProperties; onClick?: () => void; className?: string }) {
   return (
-    <div onClick={onClick} style={{ background: COLORS.card, border: `1px solid ${COLORS.border}`, borderRadius: 10, padding: 16, ...style }}>
+    <div onClick={onClick} className={className} style={{ background: COLORS.card, border: `1px solid ${COLORS.border}`, borderRadius: 10, padding: 16, ...style }}>
       {children}
     </div>
   );
@@ -357,7 +357,7 @@ export default function Deck() {
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 16, flexWrap: "wrap", gap: 12 }}>
         <div>
           <h1 style={{ margin: 0, fontSize: 22, fontWeight: 700, letterSpacing: "-0.01em" }}>1760 Strategic AI</h1>
-          <p style={{ margin: "2px 0 0", fontSize: 13, color: COLORS.textMuted }}>Operations Dashboard \u2014 March 7, 2026</p>
+          <p style={{ margin: "2px 0 0", fontSize: 13, color: COLORS.textMuted }}>Operations Dashboard \u2014 March 8, 2026</p>
         </div>
         <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
           {[{ v: "all", l: "All" }, { v: "client", l: "Clients" }, { v: "internal", l: "Internal" }].map(f => (
@@ -431,7 +431,14 @@ export default function Deck() {
         })}
       </div>
       <SectionTitle>Timeline (Feb 23 \u2014 Apr 12)</SectionTitle>
-      <Card style={{ marginBottom: 20, overflowX: "auto" }}>
+      <style>{`
+        .gantt-scroll::-webkit-scrollbar { height: 4px; }
+        .gantt-scroll::-webkit-scrollbar-track { background: transparent; }
+        .gantt-scroll::-webkit-scrollbar-thumb { background: #2a2e3a; border-radius: 4px; }
+        .gantt-scroll::-webkit-scrollbar-thumb:hover { background: #6366f1; }
+        .gantt-scroll { scrollbar-width: thin; scrollbar-color: #2a2e3a transparent; }
+      `}</style>
+      <Card className="gantt-scroll" style={{ marginBottom: 20, overflowX: "auto" }}>
         <div style={{ minWidth: 700 }}>
           <div style={{ display: "flex", borderBottom: `1px solid ${COLORS.border}`, paddingBottom: 6, marginBottom: 8 }}>
             <div style={{ width: 170, flexShrink: 0 }} />
@@ -440,7 +447,7 @@ export default function Deck() {
                 const d = new Date(GANTT_START); d.setDate(d.getDate() + i * 7);
                 return (
                   <div key={i} style={{ flex: "0 0 auto", width: `${(7 / GANTT_DAYS) * 100}%`, fontSize: 10, color: COLORS.textMuted }}>
-                    {formatDate(d.toISOString().split("T")[0])}
+                    {formatDate(d)}
                   </div>
                 );
               })}
@@ -637,7 +644,7 @@ export default function Deck() {
         ))}
       </Card>
       <div style={{ textAlign: "center", fontSize: 10, color: COLORS.textMuted, paddingTop: 8 }}>
-        1760 Strategic AI \u2014 Generated from ops-snapshot.md (Mar 7, 2026) \u00b7 Click any project card to isolate its timeline
+        1760 Strategic AI \u2014 Generated from ops-snapshot.md (Mar 8, 2026) \u00b7 Click any project card to isolate its timeline
       </div>
     </div>
   );
